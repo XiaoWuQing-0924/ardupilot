@@ -276,6 +276,10 @@
 # define MODE_GUIDED_NOGPS_ENABLED !HAL_MINIMIZE_FEATURES
 #endif
 
+#ifndef MODE_TESTMODE_ENABLED
+# define MODE_TESTMODE_ENABLED ENABLED
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 // Loiter mode - allows vehicle to hold global position
 #ifndef MODE_LOITER_ENABLED

@@ -947,6 +947,9 @@ private:
 #if MODE_GUIDED_ENABLED == ENABLED
     ModeGuided mode_guided;
 #endif
+#if MODE_TESTMODE_ENABLED == ENABLED
+    ModeGuided mode_testmode;
+#endif
     ModeLand mode_land;
 #if MODE_LOITER_ENABLED == ENABLED
     ModeLoiter mode_loiter;
