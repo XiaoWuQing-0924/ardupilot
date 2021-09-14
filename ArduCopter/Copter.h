@@ -926,6 +926,11 @@ private:
 #if MODE_AUTO_ENABLED == ENABLED
     ModeAuto mode_auto;
 #endif
+//jxl
+#if MODE_TESTMODE_ENABLED == ENABLED
+    ModeTestmode mode_testmode;
+#endif
+
 #if AUTOTUNE_ENABLED == ENABLED
     ModeAutoTune mode_autotune;
 #endif

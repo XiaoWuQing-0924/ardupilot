@@ -62,6 +62,12 @@ Mode *Copter::mode_from_mode_num(const Mode::Number mode)
             ret = &mode_loiter;
             break;
 #endif
+//jxl
+#if MODE_TESTMODE_ENABLED == ENABLED
+        case Mode::Number::TESTMODE:
+            ret = &mode_testmode;
+            break;
+#endif
 
 #if MODE_GUIDED_ENABLED == ENABLED
         case Mode::Number::GUIDED:

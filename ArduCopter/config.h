@@ -271,6 +271,12 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+// testmode mode - this is a test mode!
+#ifndef MODE_TESTMODE_ENABLED
+# define MODE_TESTMODE_ENABLED ENABLED
+#endif
+
+//////////////////////////////////////////////////////////////////////////////
 // GuidedNoGPS mode - control vehicle's angles from GCS
 #ifndef MODE_GUIDED_NOGPS_ENABLED
 # define MODE_GUIDED_NOGPS_ENABLED !HAL_MINIMIZE_FEATURES
